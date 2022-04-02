@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 import homeimg from "./images/homeimg.jpeg";
 import { Navbar } from "./Navbar";
 import transparentimg from "./images/transparentimg.png";
@@ -17,6 +19,10 @@ import { useState } from "react";
 export const Home = () => {
   //const [salonathomebtn, setSalonathomebtn] = useState(false);
   //const [mobileverificationbtn, setMobileverificationbtn] = useState(false);
+  let navigate = useNavigate();
+  function handlechange(e){
+     navigate(`/urbanhome`)
+  }
   return (
     <div className="homepagediv">
       <Navbar />
@@ -33,12 +39,13 @@ export const Home = () => {
           </p>
           <div className="selectdiv">
             <h3>where do you need a service?</h3>
-            <select className="citydiv">
+            <select onChange={(e)=>{handlechange(e.target.value)}} className="citydiv">
               <option>select your city name</option>
-              <option value="">Hazaribagh</option>
-              <option value="">Banglore</option>
-              <option value="">Ranchi</option>
-              <option value="">Delhi</option>
+              
+            <option value="Hazaribagh">Hazaribagh</option>
+              <option value="Banglore">Banglore</option>
+              <option value="Ranchi">Ranchi</option>
+              <option value="Delhi">Delhi</option>
             </select>
           </div>
         </div>
