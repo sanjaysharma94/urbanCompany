@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CloseIcon from "@mui/icons-material/Close";
+//import CloseIcon from "@mui/icons-material/Close";
 
 const Login = ({ closelogin }) => {
   return (
@@ -9,7 +9,7 @@ const Login = ({ closelogin }) => {
           closelogin(false);
         }}
       >
-        <CloseIcon />
+      x
       </div>
       <div>
         <h3>Please login to continue</h3>

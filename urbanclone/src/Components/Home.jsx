@@ -11,12 +11,12 @@ import checkoutimg from "./images/checkoutimg.png";
 import uclogo from "./images/uclogo.png";
 import playstoreimg from "./images/playstoreimg.png";
 import { useState } from "react";
-import { Salonathome } from "./Salonathome";
-import { Mobileverification } from "./Mobileverification";
+//import { Salonathome } from "./Salonathome";
+//import { Mobileverification } from "./Mobileverification";
 
 export const Home = () => {
-  const [salonathomebtn, setSalonathomebtn] = useState(false);
-  const [mobileverificationbtn, setMobileverificationbtn] = useState(false);
+  //const [salonathomebtn, setSalonathomebtn] = useState(false);
+  //const [mobileverificationbtn, setMobileverificationbtn] = useState(false);
   return (
     <div className="homepagediv">
       <Navbar />
@@ -272,19 +272,15 @@ export const Home = () => {
             <div>2014-22 UrbanClap Technlgies India Pvt.Ltd.</div>
             <div></div>
             <div>
-              {mobileverificationbtn == true ? <Mobileverification /> : null}
+              
               <div
-                onClick={() => {
-                  setMobileverificationbtn(true);
-                }}
+                
               >
                 <img src={playstoreimg}></img>
               </div>
-              {salonathomebtn == true ? <Salonathome /> : null}
+              
               <div
-                onClick={() => {
-                  setSalonathomebtn(true);
-                }}
+                
               >
                 <img src={appstoreimg}></img>
               </div>
