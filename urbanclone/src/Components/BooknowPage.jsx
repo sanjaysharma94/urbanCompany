@@ -10,13 +10,16 @@ import { Faq } from "./Faqs"
 import { Feedbackdiv } from "./Feedbackdiv"
 import { Description } from "./Description"
 import { H2 } from "./Heading"
+import { Navbar } from "./Navbar"
+import {Footer} from "./Footer"
 
-function Booknowpage() {
+export function Booknowpage() {
   const [color, setColor] = useState("white")
   
 
   return (
     <div>
+      <Navbar/>
       <Background>
       <Location>Saloon at Home for Women in Ahmedabaad,India</Location>
       <Service color={color}>Choose a service</Service>
@@ -29,9 +32,10 @@ function Booknowpage() {
      <Feedbackdiv><h2>Description</h2><h2>FAQs</h2><h2>Customer Reviews</h2><h2>About Saloon At Home For Women</h2></Feedbackdiv>
      <Description><H2>Saloon At Home For Women in Every city </H2><p>Tired of going to the salon? Urban Company provides services</p></Description>
       <Faq></Faq>
+      <Footer/>
      
     </div>
   )
 }
 
-export default Booknowpage
+  

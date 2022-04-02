@@ -23,9 +23,7 @@ export const Faq =  () => {
 Ensure the room you get the service done is air conditioned (unless it is winter)
 Exfoliate the skin lightly
 Moisturise till the day before your waxing appointment 
-Let the hair grow. Longer the hair, the better
-Check yourself for burns, cuts etc. We recommend you treat it before getting waxing done or inform the professional
-Let the professional know if you are allergic to anything particular to the service
+Let the hair grow.
           </p>
         </ScaleFade>
       </Box>
