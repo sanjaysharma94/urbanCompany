@@ -2,7 +2,7 @@ import axios from "axios";
 import { useContext } from "react";
 import { useEffect, useState } from "react";
 import { Salonproducts } from "./Salonproducts";
-import { showcontinueContext } from "../contexts/cartContext";
+//import { showcontinueContext } from "../contexts/cartContext";
 export const Salonwomen = () => {
   const [products, setProducts] = useState([]);
   const [update, setUpdate] = useState(products);
@@ -18,9 +18,9 @@ export const Salonwomen = () => {
   }, []);
   console.log("products", products);
 
-  const showcontinue = (data) => {
-    setShow(data);
-  };
+  //const showcontinue = (data) => {
+    //setShow(data);
+  //};
   return (
     <div className="salonathomecontainer">
       <div>first</div>

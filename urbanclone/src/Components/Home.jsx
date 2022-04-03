@@ -7,10 +7,11 @@ import expertimg from "./images/expertimg.png";
 import euippedimg from "./images/euippedimg.png";
 import qualityimg from "./images/qualityimg.png";
 
-import appstoreimg from "./images/appstoreimg.png";
+
 import salonimg from "./images/salonimg.png";
 import checkoutimg from "./images/checkoutimg.png";
 import uclogo from "./images/uclogo.png";
+import appstoreimg from "./images/appstoreimg.png";
 import playstoreimg from "./images/playstoreimg.png";
 import { useState } from "react";
 //import { Salonathome } from "./Salonathome";

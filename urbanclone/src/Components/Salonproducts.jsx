@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { useContext } from "react";
-import { cartContext } from "../contexts/cartContext";
+//import { useContext } from "react";
+//import { cartContext } from "../contexts/cartContext";
 
 export const Salonproducts = (props) => {
-  const {handlecart}=useContext(cartContext);
+  //const {handlecart}=useContext(cartContext);
   let data = props.data;
   console.log(data);
   return (
@@ -31,7 +31,7 @@ export const Salonproducts = (props) => {
         <div className="addbtn">
           <div
             onClick={() => {
-              handlecart()
+              //handlecart()
             }}
             style={{ borderRadius: "5px" }}
           >

@@ -1,5 +1,5 @@
 import { Box ,Image} from '@chakra-ui/react'
-
+import {Link} from "react-router-dom"
 
 // Sample card from Airbnb
  export function Image1() {
@@ -26,9 +26,9 @@ import { Box ,Image} from '@chakra-ui/react'
             {property.title}
           </Box>
         
-             <Box as='button' ml="13%"_hover={{ mt:"50px" }}mt='12%' mb="3%" borderRadius='md' bg='black' color='white' px={14} h={8}>
+             <Link to={`/urbanhome/book/services`}><Box as='button' ml="13%"_hover={{ mt:"50px" }}mt='12%' mb="3%" borderRadius='md' bg='black' color='white' px={14} h={8}>
     Book now
-  </Box>
+  </Box></Link>
         
   
           
