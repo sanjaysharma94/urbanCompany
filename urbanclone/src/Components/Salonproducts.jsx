@@ -38,9 +38,9 @@ export const Salonproducts = (props) => {
             handleitem(1);
           }}
         >
-          <div style={{ borderRadius: "5px" }}>
-            <span>ADD</span>
-            <span style={{ marginLeft: "15px" }}>+</span>
+          <div style={{ borderRadius: "5px", textAlign:"center" ,color:"white",marginTop:"10px",marginRight:"10px",backgroundColor:"#4179ea",border:"none"}}>
+            <span style={{ borderRadius: "5px"  }}>ADD</span>
+            <span>+</span>
           </div>
         </div>
       </div>

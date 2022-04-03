@@ -605,11 +605,17 @@
   height: 100px;
   text-align: center;
 }
+.forColor {
+  color: white;
+}
 .mainDiv {
+  background-color: #46244C;
+  border: 10px solid black;
   display: flex;
 }
 .address {
-  border: 1px solid ;
+  /* border: 1px solid red; */
+  /* background-color: #46244C; */
   width: 60%;
 }
 .maps {
@@ -618,5 +624,29 @@
   height: 350px;
   /* border: 1px solid green; */
 }
+.imageFlex {
+  display: flex;
+  /* background-color: black; */
+  border-radius: 2%;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,14 +1,16 @@
+// import "../App.css"s
 import { useState } from "react";
-import { Box, Image } from "@chakra-ui/react";
-import { Image1 } from "./BookNow1";
-
+import { Link } from "react-router-dom";
+import {Navigate} from "react-router-dom"
+import { Home } from "./Home";
 export const Address = () => {
     const [place, setplace] = useState("");
-
     return (
         <div className="mainDiv">
             <div className="address">
-                <p style={{ textAlign: "center" }}>Service</p>
+                <h3 style={{ textAlign: "center" }} className="forColor">
+                    Service
+                </h3>
                 <div className="maps">
                     <div className="mapouter">
                         <div className="gmap_canvas">
@@ -23,9 +25,6 @@ export const Address = () => {
                                 marginwidth="0"
                             ></iframe>
                             <a href="https://123movies-to.org"></a>
-                            <a href="https://www.embedgooglemap.net">
-                                maps embed
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -34,7 +33,7 @@ export const Address = () => {
                         <div className="mb-3">
                             <label
                                 for="exampleInputEmail1"
-                                className="form-label"
+                                className="form-label forColor"
                             >
                                 Address
                             </label>
@@ -49,14 +48,14 @@ export const Address = () => {
                                     }, 3000);
                                 }}
                             />
-                            <div id="emailHelp" className="form-text">
+                            <div id="emailHelp" className="form-text forColor">
                                 Please Enter your address
                             </div>
                         </div>
                         <div className="mb-3">
                             <label
                                 for="exampleInputPassword1"
-                                className="form-label"
+                                className="form-label forColor"
                             >
                                 Name
                             </label>
@@ -72,7 +71,10 @@ export const Address = () => {
             <div>
                 <form className="row g-2 mx-4">
                     <div className="col-md-6">
-                        <label for="inputEmail4" className="form-label">
+                        <label
+                            for="inputEmail4"
+                            className="form-label forColor"
+                        >
                             Name as on card
                         </label>
                         <input
@@ -81,9 +83,11 @@ export const Address = () => {
                             id="inputEmail4"
                         />
                     </div>
-
                     <div className="col-md-6">
-                        <label for="inputPassword4" className="form-label">
+                        <label
+                            for="inputPassword4"
+                            className="form-label forColor"
+                        >
                             Card Number
                         </label>
                         <input
@@ -94,7 +98,7 @@ export const Address = () => {
                     </div>
                     {/* ....................................... */}
                     <div className="col-md-2">
-                        <label for="inputZip" className="form-label">
+                        <label for="inputZip" className="form-label forColor">
                             CVV
                         </label>
                         <input
@@ -103,9 +107,8 @@ export const Address = () => {
                             id="inputZip"
                         />
                     </div>
-
                     <div className="col-md-4">
-                        <label for="inputState" className="form-label">
+                        <label for="inputState" className="form-label forColor">
                             Card
                         </label>
                         <select id="inputState" className="form-select">
@@ -116,22 +119,92 @@ export const Address = () => {
                             <option value="">Debit Card</option>
                         </select>
                     </div>
-                    <p>Total : </p>
-
+                    <p className="forColor">Total : </p>
                     <div className="col-12">
                         <button
-                            type="submit"
+                            type="button"
                             className="btn btn-primary"
-                            onClick={() => {
-                                alert("Thanks for taking our service");
-                            }}
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"
+                            // onClick={() => {
+                            //    console.log("hi");
+                               
+                
+                            // }}
                         >
-                            Pay now
+                            Pay Now
                         </button>
+                        <div
+                            className="modal fade"
+                            id="exampleModal"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true"
+                        >
+                            <div className="modal-dialog">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <h5
+                                            className="modal-title"
+                                            id="exampleModalLabel"
+                                        >
+                                            Payment Successful
+                                        </h5>
+                                        <button
+                                            type="button"
+                                            className="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                            onClick={() => {
+                                               <Link to={<Home/>}></Link>
+                                            }}
+                                        ></button>
+                                    </div>
+                                    <div className="modal-body">
+                                        Thanks for taking our service
+                                    </div>
+                                    <div className="modal-footer"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </form>
-                <div>
-                    <Image1 />
+                <div className="imageFlex">
+                    <div className="card mx-3 my-3" style={{ width: "18rem" }}>
+                        <img
+                            src="https://res.cloudinary.com/urbanclap/image/upload/t_low_res_portfolio_medium,q_auto:low,f_auto/images/growth/home-screen/1603078787966-226e17.jpeg"
+                            className="card-img-top"
+                            alt="..."
+                        />
+                        <div className="card-body">
+                            <h5 className="card-title">Saloon Classic</h5>
+                            <p className="card-text ">
+                                Get Beauty Salon Services from professional
+                                beauticians in the comfort of your home. We
+                                provide salon at home services like Waxing,
+                                Facial, Manicure, Pedicure etc.
+                            </p>
+                        </div>
+                    </div>
+                    {/* ................... */}
+                    <div className="card mx-3 my-3" style={{ width: "18rem" }}>
+                        <img
+                            src="https://res.cloudinary.com/urbanclap/image/upload/t_low_res_portfolio_medium,q_auto:low,f_auto/images/growth/home-screen/1603078782132-dfcd55.jpeg"
+                            className="card-img-top"
+                            alt="..."
+                        />
+                        <div className="card-body">
+                            <h5 className="card-title">
+                                Saloon at Home For Women
+                            </h5>
+                            <p className="card-text">
+                                GetLook is one of the Best Home Salon and Spa
+                                Services which brings Best Beauty Professionals
+                                at your home and provides beauty services at
+                                home.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

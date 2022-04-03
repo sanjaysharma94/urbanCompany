@@ -62,7 +62,7 @@ export const UrbanHome = ()=>{
   </Box>
  
   <Box boxShadow='md' p='6' rounded='md' bg='white' w="150px" h="130px"  _hover={{ bg: "gray.200"}} >
-  <Link href='/urbanhome/book' isExternal>
+  <Link to={`/urbanhome/book `}>
   <Image src='https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/supply/customer-app-supply/1635331606894-7b633f.png' alt='Dan Abramov'ml="15px" />
 </Link>
    <Text fontSize="13px">
