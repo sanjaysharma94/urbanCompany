@@ -4,6 +4,7 @@ import {Home} from "./Home"
 import {UrbanHome} from "./UrbanHome"
 import {Booknowpage} from "./BooknowPage"
 import {Salonwomen} from "./Salonwomen"
+import {Address} from "./address"
 
 
 export const Allroutes  = ()=>{
@@ -13,7 +14,7 @@ export const Allroutes  = ()=>{
             <Route path="/urbanhome" element={<UrbanHome/>}></Route>
             <Route path="/urbanhome/book" element={<Booknowpage/>}></Route>
             <Route path="/urbanhome/book/services" element={<Salonwomen/>}></Route>
-            <Route path="/urbanhome/book/services/address" element={<UrbanHome/>}></Route>
+            <Route path="/urbanhome/book/services/address" element={<Address/>}></Route>
 
             
         </Routes>

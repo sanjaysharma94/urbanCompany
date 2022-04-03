@@ -605,4 +605,18 @@
   height: 100px;
   text-align: center;
 }
+.mainDiv {
+  display: flex;
+}
+.address {
+  border: 1px solid ;
+  width: 60%;
+}
+.maps {
+  margin: auto;
+  width: 90%;
+  height: 350px;
+  /* border: 1px solid green; */
+}
+
 
