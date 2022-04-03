@@ -7,6 +7,9 @@ import {BrowserRouter} from "react-router-dom";
 import {ChakraProvider} from '@chakra-ui/react';
 import { ColorModeScript } from '@chakra-ui/react';
 import { StrictMode } from 'react';
+import { CartContextProvider } from "./contexts/cartContext";
+import { ItemContextProvider } from "./contexts/itemContext";
+
  
 
 ReactDOM.render(
@@ -16,7 +19,12 @@ ReactDOM.render(
 
   <ColorModeScript />
   <ChakraProvider>
-      <App />
+  <ItemContextProvider>
+      <CartContextProvider>
+        <App />
+      </CartContextProvider>
+    </ItemContextProvider>
+
   </ChakraProvider>
   
   </BrowserRouter>

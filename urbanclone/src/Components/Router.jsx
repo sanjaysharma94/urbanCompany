@@ -13,6 +13,8 @@ export const Allroutes  = ()=>{
             <Route path="/urbanhome" element={<UrbanHome/>}></Route>
             <Route path="/urbanhome/book" element={<Booknowpage/>}></Route>
             <Route path="/urbanhome/book/services" element={<Salonwomen/>}></Route>
+            <Route path="/urbanhome/book/services/address" element={<UrbanHome/>}></Route>
+
             
         </Routes>
     )

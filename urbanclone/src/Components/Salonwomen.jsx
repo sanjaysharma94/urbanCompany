@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Salonproducts } from "./Salonproducts";
 import { CartContext } from "../contexts/cartContext";
 import { ItemContext } from "../contexts/itemContext";
+import {Link} from "react-router-dom"
 export const Salonwomen = () => {
   const [products, setProducts] = useState([]);
   const [update, setUpdate] = useState(products);
@@ -20,11 +21,11 @@ export const Salonwomen = () => {
   useEffect(() => {
     getdata();
   }, []);
-  console.log("products", products);
+  //console.log("products", products);
 
-  const showcontinue = (data) => {
-    setShow(data);
-  };
+  //const showcontinue = (data) => {
+   // setShow(data);
+  //};
   return (
     <div className="salonathomecontainer">
       <div
@@ -144,7 +145,7 @@ export const Salonwomen = () => {
             {products.map((e) => {
               return (
                 <div key={e._id}>
-                  {e.title == "Haircut" ? <Salonproducts data={e} /> : null}
+                  {e.title === "Haircut" ? <Salonproducts data={e} /> : null}
                 </div>
               );
             })}
@@ -154,7 +155,7 @@ export const Salonwomen = () => {
             {products.map((e) => {
               return (
                 <div key={e._id}>
-                  {e.title == "Stress Relief Therapy + Free Head Message" ? (
+                  {e.title === "Stress Relief Therapy + Free Head Message" ? (
                     <Salonproducts data={e} />
                   ) : null}
                 </div>
@@ -165,7 +166,7 @@ export const Salonwomen = () => {
             {products.map((e) => {
               return (
                 <div key={e._id}>
-                  {e.title == "Blowdry" ? <Salonproducts data={e} /> : null}
+                  {e.title === "Blowdry" ? <Salonproducts data={e} /> : null}
                 </div>
               );
             })}
@@ -185,7 +186,7 @@ export const Salonwomen = () => {
                 <h4>{item}</h4>
               </div>
             </div>
-            <div
+           <Link to={`/urbanhome/book/services/address`}> <div
               style={{
                 backgroundColor: "#304ffe",
                 width: "300px",
@@ -198,7 +199,7 @@ export const Salonwomen = () => {
               }}
             >
               continue
-            </div>
+            </div></Link>
           </div>
         </div>
       </div>
