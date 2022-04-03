@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Box, Image } from "@chakra-ui/react";
+import { Image1 } from "./BookNow1";
 
 export const Address = () => {
     const [place, setplace] = useState("");
@@ -128,6 +130,9 @@ export const Address = () => {
                         </button>
                     </div>
                 </form>
+                <div>
+                    <Image1 />
+                </div>
             </div>
         </div>
     );
