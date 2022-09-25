@@ -2,8 +2,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import {Navigate} from "react-router-dom"
+import { useContext } from "react";
+import { CartContext } from "../contexts/cartContext";
 import { Home } from "./Home";
 export const Address = () => {
+    const { cart } = useContext(CartContext);
     const [place, setplace] = useState("");
     return (
         <div className="mainDiv">
@@ -132,7 +135,7 @@ export const Address = () => {
                 
                             // }}
                         >
-                            Pay Now
+                            Pay Now {cart}
                         </button>
                         <div
                             className="modal fade"
