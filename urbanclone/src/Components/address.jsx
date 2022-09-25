@@ -135,7 +135,7 @@ export const Address = () => {
                 
                             // }}
                         >
-                            Pay Now {cart}
+                            Pay Now  ₹{cart}
                         </button>
                         <div
                             className="modal fade"
