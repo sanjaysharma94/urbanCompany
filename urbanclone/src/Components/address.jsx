@@ -18,6 +18,7 @@ export const Address = () => {
                     <div className="mapouter">
                         <div className="gmap_canvas">
                             <iframe
+                                title="address"
                                 width="500"
                                 height="340"
                                 id="gmap_canvas"
@@ -129,11 +130,6 @@ export const Address = () => {
                             className="btn btn-primary"
                             data-bs-toggle="modal"
                             data-bs-target="#exampleModal"
-                            // onClick={() => {
-                            //    console.log("hi");
-                               
-                
-                            // }}
                         >
                             Pay Now  ₹{cart}
                         </button>
