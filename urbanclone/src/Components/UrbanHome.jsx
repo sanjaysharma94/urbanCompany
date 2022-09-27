@@ -29,7 +29,7 @@ export const UrbanHome = ()=>{
             <Container >
            
             <Text align="center">
-              Home/Delhi-Ncr
+              Home
             </Text>
             </Container>
             
