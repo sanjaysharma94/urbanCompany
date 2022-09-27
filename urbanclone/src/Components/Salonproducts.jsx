@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useContext } from "react";
 import { CartContext } from "../contexts/cartContext";
 import { ItemContext } from "../contexts/itemContext";
@@ -8,7 +7,7 @@ export const Salonproducts = (props) => {
   const { handleitem } = useContext(ItemContext);
 
   let data = props.data;
-  console.log(data);
+  
   return (
     <div className="titlediv">
       <h3 style={{ color: "green" }}>{data.title}</h3>
