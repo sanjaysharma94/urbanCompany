@@ -46,6 +46,7 @@ export const Address = () => {
                                 className="form-control"
                                 id="exampleInputEmail1"
                                 aria-describedby="emailHelp"
+                                required
                                 onChange={(e) => {
                                     setTimeout(() => {
                                         setplace(e.target.value);
@@ -65,11 +66,13 @@ export const Address = () => {
                             </label>
                             <input
                                 type="text"
+                                required
                                 className="form-control"
                                 id="exampleInputPassword1"
                             />
                         </div>
                     </form>
+
                 </div>
             </div>
             <div>
@@ -82,6 +85,7 @@ export const Address = () => {
                             Name as on card
                         </label>
                         <input
+                            required="true"
                             type="text"
                             className="form-control"
                             id="inputEmail4"
@@ -123,15 +127,16 @@ export const Address = () => {
                             <option value="">Debit Card</option>
                         </select>
                     </div>
-                    <p className="forColor">Total : </p>
+                    <p className="forColor">Total :  ₹{cart} </p>
                     <div className="col-12">
                         <button
+                       
                             type="button"
                             className="btn btn-primary"
                             data-bs-toggle="modal"
                             data-bs-target="#exampleModal"
                         >
-                            Pay Now  ₹{cart}
+                            Pay Now 
                         </button>
                         <div
                             className="modal fade"
