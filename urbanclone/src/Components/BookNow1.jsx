@@ -1,14 +1,14 @@
 import { Box ,Image} from '@chakra-ui/react'
 import {Link} from "react-router-dom"
 
-// Sample card from Airbnb
- export function Image1() {
-  
+
+ export function Image1(props) {
+    
     const property = {
-      imageUrl: "https://res.cloudinary.com/urbanclap/image/upload/t_low_res_portfolio_medium,q_auto:low,f_auto/images/growth/home-screen/1603078787966-226e17.jpeg",
+      imageUrl: props.imag,
       imageAlt: 'Rear view of modern home with pool',
       
-      title: 'Saloon Classic',
+      title:props.title
      
     }
   
