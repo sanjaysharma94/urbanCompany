@@ -166,7 +166,7 @@ export const HomePage =() => {
         <Box h="150px" w="25%" mt="50px" >
             <Image src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1640322586655-03f2a3.jpeg"></Image>
             <Text align="center" fontWeight="bold">
-             Insult Video Consult for Free
+             Consult Video Consult for Free
             </Text>
             <Text align="center" color="grey">
               Free and Instant Daignosis
@@ -180,7 +180,7 @@ export const HomePage =() => {
              Gyser
             </Text>
             <Text align="center" color="grey">
-              strts at ₹249
+              starts at ₹249
             </Text>
         </Box>
         <Box h="150px" w="25%" mt="50px"  >
