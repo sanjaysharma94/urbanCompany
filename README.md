@@ -17,9 +17,7 @@
 
 
 
-
-
-<img src="https://github.com/sanjaysharma94/portfolio/blob/main/portfolio/assets/project/maxfashion%20clone.png?raw=true" alt="">
-
 <img src="https://github.com/sanjaysharma94/urbanCompany/blob/main/urbanclone/src/Components/images/Screenshot%20(72).png?raw=true" alt="">
+  
+<img src="https://github.com/sanjaysharma94/urbanCompany/blob/main/urbanclone/src/Components/images/Screenshot%20(73).png?raw=true" alt="">
 <img src="" alt="">
