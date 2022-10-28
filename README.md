@@ -6,7 +6,7 @@
 <p>1.Asynchronous image carousels. <p/>
 <p>2.Different media queries. <p/>
 <p>3.OTP based Authentication. <p/>
-<h3>Tech Stack: HTML | CSS | Javascript <h3/>
+<h3>Tech Stack: React | CSS | Redux | Chakra UI <h3/>
 <h3>Areas of responsibility:<h3/>
 <p>1.Built static web layouts. <p/>
 <p>2.Worked on the cart page of the website. <p/>
